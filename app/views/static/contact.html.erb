@@ -1,0 +1,446 @@
+<div class="wrap">
+  <div class="contactback">
+
+
+  <div class="navcon">
+<div class="grnav"></div>
+    <div class="nav">
+      <div class="navi left">
+        <div class="leftcontact brn">*phone or email*</div>
+      </div>
+      <div class="navi mid">
+        <ul class="menu cmenu ari brn">
+          <li class="brn"><a href="/services">Services</a></li>
+          <li><a href="/welcome">Welcome</a></li>
+          <a href="/"><li><%= image_tag("tlogo.jpg") %></li></a>
+          <li class="brn"><a href="/gallery">Gallery</a></li>
+          <li class="brn"><a href="/contact" data-no-turbolink="true">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navi right">
+        <a href="/contact"><div class="menubtn aribold brnb">BOOK US</div></a>
+      </div>
+    </div>
+    </div>
+
+    <div class="mobilenav">
+      <div class="mobileimg"><%= image_tag("tlogo.jpg") %></div>
+      <div class="mobileicon"><i class="fas fa-ellipsis-v"></i></div>
+    </div>
+
+    <div class="mobilego">
+      <div class="item"><span class="mlclose"><i class="fas fa-times"></i>&nbsp</span></div>
+      <div class="item"> <span class="ml ab"><%= link_to "Welcome", "/" %></span></div>
+      <div class="item"> <span class="ml"><%= link_to "Services", "/services" %></span></div>
+      <div class="item"> <span class="ml"><%= link_to "Gallery", "/gallery" %></span></div>
+      <div class="item"> <span class="ml"><%= link_to "Contact", "/contact" %></span></div>
+      </div>
+  <div class="dark"></div>
+
+
+    <div class="headercontentwrap">
+
+  <div class="backimg">
+    <div class="backimgcenter"></div>
+  </div>
+
+  <div class="upperbacktext brfont brun">
+    <h1>Get in Touch</h1>
+  </div>
+  <div class="lowerbacktext ari colw">Scroll down for booking form...</div>
+
+  </div>
+
+</div>
+
+
+<div class="aboutmeet">
+  <div class="greentxt">Biography</div>
+  <h3>Meet Chef Tariq</h3>
+  <p> </p>
+</div>
+<div class="aboutcontent">
+  <div class="textwrap">
+   <%= image_tag("one.jpg") %>
+  </div>
+  <p class="pc">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+     <br>
+     totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+       <br>
+     Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+     Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+     <br>
+     Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    </p>
+</div>
+
+
+
+
+
+
+<div class="mapcontain">
+  <iframe src="https://maps.google.com/maps?q=Vancouver,%20BC&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+
+<div class="maplimit">
+  <div class="mapright">
+    <div class="contactbox">
+    <div class="contacthead"> Where We Are</div>
+    <div class="contactmidleft">
+      <ul class="leftlist">
+        <li>Our City:</li>
+        <li>Schedule:</li>
+        <li>Phone: </li>
+      </ul>
+
+    </div>
+    <div class="contactmidright">
+      <ul class="rightlist">
+        <li>Vancouver, BC</li>
+        <li>Mon - Fri 10 am -8pm</li>
+        <li>*phone number*</li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="contactform">
+  <div class="contactlimit">
+
+  <div class="inqhead pbb">
+    Let's make your next dinner something to remember.
+  </div>
+  <div class="inqtext">
+    Fill in your details and we will contact you.
+  </div>
+
+  <div class="contactformwrap">
+    <%= form_with(model: @inquiry, local: true) do |form| %>
+    <div class="conthalf">
+    <div class="contholder">
+    <%= form.text_field :name, class: "contforminput", placeholder: "Your Name*", required: "required" %>
+    </div>
+    </div><div class="conthalf">
+    <div class="contholder">
+    <%= form.telephone_field :phone, class: "contforminput", placeholder: "Phone Number", required: "required" %>
+    </div>
+    </div>
+
+  </div>
+  <button type="submit" class="inqbtn">
+      <i class="far fa-file-alt"></i> &nbsp;&nbsp;BOOK YOUR EVENT
+  </button>
+  <% end %>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+  <div class="footerlimit">
+  <div class="footertop">
+    <div class="footerpart flogo">
+      <div class="mobilelogocent">
+   <%= image_tag("tlogo.jpg")%>
+      </div>
+    </div>
+    <div class="footerpart flist">
+      <ul class="menu onehun ari bru">
+        <li><a href="/">Welcome</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Menu</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footerpart infof">
+      <div class=" finfo">
+
+      </div>
+    </div>
+  </div>
+  <div class="footermid">
+    <a href="https://www.instagram.com/sabrinascucina/"><i class="fab fa-instagram"></i></a> &nbsp;<i class="fab fa-facebook-f"></i>
+  </div>
+
+  <div class="footerlow">
+  </div>
+  </div>
+  </div>
+
+
+</div>
+
+
+<script>
+  // $(document).on("turbolinks:load", function() {
+    console.log("working");
+  const pic = document.getElementsByClassName("twoimg")[0];
+  let x = 0;
+  const stretch = document.getElementsByClassName("miliadstretch")[0];
+  const left = document.getElementsByClassName("leftb")[0];
+  const right = document.getElementsByClassName("rightb")[0];
+  const wrap = document.getElementsByClassName("wrap")[0];
+  const mwrap = document.getElementsByClassName("mwrap")[0];
+  const nav = document.getElementsByClassName("nav")[0];
+  const grnav = document.getElementsByClassName("grnav")[0];
+  let third = document.getElementsByClassName("three")[0]
+  const menu = document.getElementsByClassName("mobilego")[0];
+  const close = document.getElementsByClassName("mlclose")[0];
+  let menubtn = document.getElementsByClassName("mobileicon")[0];
+  const dining = document.getElementsByClassName("dining")[0];
+  const seefull = document.getElementsByClassName("seefull")[0];
+  const backimg = document.getElementsByClassName("backimg")[0];
+  const abouttext = document.getElementsByClassName("abouttext")[0];
+  const thefade = document.getElementsByClassName("thefade")[0];
+  const readmore = document.getElementsByClassName("readsp")[0];
+  const fbl = document.getElementsByClassName("firstbackleft")[0];
+  const frimage = document.getElementsByClassName("frimage")[0];
+  const newthreeback = document.getElementsByClassName("newthreeback")[0];
+
+
+
+console.log(menubtn);
+  // $( ".menubtn" ).click(function() {
+  //   showMen();
+  // });
+
+  $(".seefull").click(function() {
+    if ($(".seefull").first().html() != "Show Less") {
+  $(".seefull").html("Show Less");
+  $(".nshow").css("display", "block");
+} else {
+  $(".seefull").html("See Full Menu");
+  $(".nshow").css("display", "none");
+}
+})
+  function showMen() {
+    console.log("clicked");
+ menu.style.left = "0";
+ dark.style.opacity = ".4";
+ dark.style.zIndex = "3";
+ dark.addEventListener('click', hideMen, false);
+}
+ function hideMen() {
+ menu.style.left = "-100%";
+ dark.style.opacity = "0";
+
+ setTimeout(function() {
+  dark.style.zIndex = "-1";
+ }, 500);
+
+}
+
+
+function readMore() {
+  if ($( readmore ).html() == "Read More") {
+  $( abouttext ).css("height", "auto");
+  $( abouttext ).css("overflow", "auto");
+  $( thefade ).css("display", "none");
+  $( readmore ).html("Read Less");
+} else {
+  $( abouttext ).css("height", "200px");
+  $( abouttext ).css("overflow", "hidden");
+  $( thefade ).css("display", "block");
+  $( readmore ).html("Read More");
+    }
+}
+
+
+
+if (close != undefined) {
+  close.addEventListener('click', hideMen);
+}
+if (menubtn != undefined) {
+  menubtn.addEventListener('click', showMen);
+}
+
+if (readmore != undefined) {
+  readmore.addEventListener('click', readMore);
+}
+
+
+  window.addEventListener("scroll", firstbackAppear);
+  window.addEventListener("scroll", twobackAppear);
+  window.addEventListener("scroll", picollageAppear);
+  window.addEventListener("scroll", emailAppear);
+  // wrap.addEventListener("scroll", firstbackAppearw);
+
+
+  if (dining != undefined) {
+    setTimeout(function(){document.getElementsByClassName("onex")[0].classList.add('twoimg-appear');}, 200)
+    setTimeout(function(){document.getElementsByClassName("twox")[0].classList.add('twoimg-appear');}, 800)
+    setTimeout(function(){document.getElementsByClassName("threex")[0].classList.add('twoimg-appear');}, 1200)
+    setTimeout(function(){document.getElementsByClassName("fourx")[0].classList.add('twoimg-appear');}, 1600)
+  }
+
+
+  function firstbackAppear() {
+       let firstback = document.getElementsByClassName("firstback")[0];
+       if (firstback != undefined ) {
+       let firstbackPos = firstback.getBoundingClientRect().top + 300;
+       let screenPos = window.innerHeight;
+       console.log(screenPos);
+       if(firstbackPos < screenPos) {
+         console.log("reached");
+         // document.getElementsByClassName("pinkwrap")[0].classList.add('pinkwrap-appear');
+         // window.removeEventListener("scroll", firstbackAppear);
+
+         fbl.classList.add('first-appear');
+         frimage.classList.add('frimage-appear');
+       }
+       }
+     }
+
+     function twobackAppear() {
+       third = document.getElementsByClassName("three")[0]
+       if (third != undefined) {
+          let twoback = document.getElementsByClassName("twoback")[0];
+          let twobackPos = twoback.getBoundingClientRect().top + 300;
+          let screenPos = window.innerHeight;
+          console.log(screenPos);
+          if(twobackPos < screenPos) {
+            document.getElementsByClassName("three")[0].classList.add('twoimg-appear');
+            setTimeout(function(){document.getElementsByClassName("two")[0].classList.add('twoimg-appear');}, 300)
+            setTimeout(function(){document.getElementsByClassName("one")[0].classList.add('twoimg-appear');}, 800)
+            setTimeout(function(){document.getElementsByClassName("four")[0].classList.add('twoimg-appear');}, 1300)
+            window.removeEventListener("scroll", twobackAppear);
+          }
+        }
+        }
+setTimeout(function(){
+$(".eapps-instagram-feed a").css("display: none");
+}, 3000);
+
+        function picollageAppear() {
+             let picollage = document.getElementsByClassName("picollage")[0];
+             if (picollage != undefined ) {
+             let picollagePos = picollage.getBoundingClientRect().top + 300;
+             let screenPos = window.innerHeight;
+             console.log(screenPos);
+             if(picollagePos < screenPos) {
+               document.getElementsByClassName("pinkwrap")[1].classList.add('pinkwrap-appear');
+               window.removeEventListener("scroll", picollageAppear);
+             }
+             }
+           }
+           function emailAppear() {
+                let email = document.getElementsByClassName("emailsub")[0];
+                if (email != undefined ) {
+                let emailPos = email.getBoundingClientRect().top + 250;
+                let screenPos = window.innerHeight;
+                console.log(screenPos);
+                if(emailPos < screenPos) {
+                  document.getElementsByClassName("emailhead")[0].classList.add('pinkwrap-appear');
+                  setTimeout(function(){document.getElementsByClassName("emailbtn")[0].classList.add('pinkwrap-appear');}, 300)
+                  window.removeEventListener("scroll", picollageAppear);
+                }
+                }
+              }
+     // function firstbackAppearw() {
+     //      let firstback = document.getElementsByClassName("firstback")[0];
+     //      let firstbackPos = firstback.getBoundingClientRect().top;
+     //      let screenPos = window.innerHeight;
+     //      console.log(screenPos);
+     //      if(firstbackPos < screenPos) {
+     //
+     //        firstback.classList.add('firstback-appear');
+     //        wrap.removeEventListener("scroll", firstbackAppearw);
+     //      }
+     //    }
+
+
+
+  $(".twoimg").hover(function() {
+    $( this ).find(".imginfo").css("top", "0");
+    $( this ).find(".simginfo").css("top", "0");
+    $( this ).find(".imgbar").css("opacity", "0");
+  }, function() {
+   $( this ).find(".imginfo").css("top", "100%");
+   $( this ).find(".simginfo").css("top", "100%");
+   $( this ).find(".imgbar").css("opacity", "1");
+  });
+
+
+
+  function leftMarg() {
+    console.log("clicked");
+    console.log(x);
+    if (x >= -1450) {
+
+
+    console.log(x);
+    x = x - 480;
+    stretch.style.marginLeft = x + "px";
+  }
+  }
+
+  function rightMarg() {
+    console.log("clicked");
+    if (x < 0) {
+
+    x = x + 480;
+    stretch.style.marginLeft = x + "px";
+  }
+};
+
+  if (left != undefined) {
+  left.addEventListener('click', rightMarg, false);
+  right.addEventListener('click', leftMarg, false);
+  }
+  $(document.body).on('touchmove', centCircle);
+  $( window ).scroll( centCircle );
+  $( wrap ).scroll( centCircle );
+
+
+
+
+  function centCircle() {
+    const wrap = document.getElementsByClassName("wrap")[0];
+
+    if (wrap != undefined) {
+      if ((wrap.scrollTop <= 20) && (window.scrollY <= 20)) {
+        grnav.style.opacity = "0";
+
+
+      } else {
+        grnav.style.opacity = "1";
+
+
+      }
+    }
+    }
+
+    $('.fixplank').click(function(event) {
+      $( this ).css("display", "none");
+    });
+
+
+    $('.himg').click(function(event) {
+
+    let img =  $(this).find('img').attr('src');
+     fixpic = document.getElementsByClassName("fixpic")[0];
+     fixplank = document.getElementsByClassName("fixplank")[0];
+     $( fixplank ).css("display", "block");
+    $( fixpic ).css("background-image", "url(" + img + ")");
+    console.log($( fixpic ).css("background-image"))
+
+    });
+
+
+
+// });
+
+</script>
